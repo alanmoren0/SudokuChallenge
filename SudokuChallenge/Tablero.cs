@@ -27,8 +27,8 @@ namespace SudokuChallenge
             int numAleatorios = 10;
             for (int i=0;i<=numAleatorios;i++)
             {
-                int x = r.Next(1,9);
-                int y = r.Next(1, 9);
+                int x = r.Next(0,8);
+                int y = r.Next(0, 8);
                 int valor= r.Next(1, 9);
                 tablero[x, y] = valor;
             }
