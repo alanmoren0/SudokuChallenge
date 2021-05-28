@@ -24,7 +24,7 @@ namespace SudokuChallenge
         //introducimos 30 números entre el 1 y 9 aleatorios en pocisiones aleatorias del arreglo
         public void llenadoAleatorio()
         {
-            int numAleatorios = 30;
+            int numAleatorios = 10;
             for (int i=0;i<=numAleatorios;i++)
             {
                 int x = r.Next(1,9);
@@ -43,12 +43,10 @@ namespace SudokuChallenge
             {
                 if (tabla[x, j]!=0 && tabla[x,j]==valor)
                 {
-                    Console.Write("|col" + valor+ "|");
                     return false;
                 }
                 if (tablero[i, x]!=0 && tabla[i,x]==valor)
                 {
-                    Console.Write("|fil" +valor+ "|");
                     return false;
                 }
             }
@@ -75,7 +73,6 @@ namespace SudokuChallenge
                                 if (resolver(tabla))
                                 {
                                     tablero = tabla;
-                                    Console.Write("|a" + a + "|");
                                     return true;
                                 }
                                 else

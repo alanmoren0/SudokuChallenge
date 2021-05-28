@@ -28,9 +28,13 @@ namespace SudokuChallenge
             tablero5 = t5.mostrarTabla();
 
             imprimirTabla(tablero1);
+            Console.WriteLine();
             imprimirTabla(tablero2);
+            Console.WriteLine();
             imprimirTabla(tablero3);
+            Console.WriteLine();
             imprimirTabla(tablero4);
+            Console.WriteLine();
             imprimirTabla(tablero5);
 
             void imprimirTabla(int[,] tabla)
